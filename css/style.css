@@ -106,8 +106,7 @@ header{
 
 
   form div input::placeholder, form div input{
-   color:  rgb(26, 24, 24);
-   
+   color:  rgba(107, 97, 97, 0.38);
 
   }
 
@@ -206,10 +205,6 @@ footer p{
     margin-top: 81vh;
   
 }
-
-.placeholder-cor form div input::placeholder, form div input{
-  color: white;
-  }
 
 
 
