@@ -9,13 +9,13 @@
     position: absolute;
     background-color:rgba(91, 11, 155, 1);
     width: 60px;
-    height: 931px;
+    height: 919px;
 }
 
 
+/* TopLingo */
 p{
     display: flex;
-    color:black;
     padding: 10vh;
     align-items: center;
     place-content: center;
@@ -48,6 +48,8 @@ header{
     display: flex;
     flex-direction: column;
     gap: 80px;
+    cursor: pointer;
+  
 
   }
 
@@ -104,12 +106,16 @@ header{
 
 
   form div input::placeholder, form div input{
-   color:  rgba(39, 39, 39, 0.38);
+   color:  rgb(26, 24, 24);
+   
+
   }
 
   form div:nth-child(2) ::placeholder{
   color: rgba(91, 11, 155, 1);
   }
+
+ 
   
 
 /* Div pai para modificar os forms */
@@ -139,11 +145,11 @@ body.dark {
   opacity: 0;
   position: absolute;
   display: none;
-  background-image: url('../img/lua.png'); 
   background-size: cover;
 }
 
-.label {
+.label { 
+   background-image: url('../img/lua.png'); 
   cursor: pointer;
   display: inline-block;
   justify-content: space-between;
@@ -152,6 +158,12 @@ body.dark {
   width: 50px;
   transform: scale(1.5);
 }
+
+/* Trocar imagem para o sol */
+input :checked +label {
+  background-image: url('../img/sol.png');
+}
+
 /* Icone do modo */
 .imagem img{
     width: 50px;
@@ -161,34 +173,43 @@ body.dark {
     margin-left: 125vh;
     margin-top: 16px;
 
-}    
+}
+
+.dark-texto {
+  color: white; 
+}
+
+
+/* Mudar fundo */
+.fundo-mudar{
+  background-color: pink;
+}
 
 /* Final da pagina */
 footer{
-    height: auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-  padding-bottom: 1.5rem;
+  place-content: center;
+  width: 128vh;
+  height: 8vh;
 }
 
 /* Nome no final da tela */
 footer p{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    place-content: center;
     font-family: Inter;
     font-size: 24px;
     font-weight: 400;
     color: black;
-    width: auto;
-
-}
-p{
-    display: flex;
-    align-items: center;
+    margin-top: 81vh;
+  
 }
 
-.dark-texto {
-    color: white; 
+.placeholder-cor form div input::placeholder, form div input{
+  color: white;
   }
+
+
+
